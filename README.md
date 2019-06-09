@@ -1,7 +1,7 @@
 # github-contents
 
 [![PyPI](https://img.shields.io/pypi/v/github-contents.svg)](https://pypi.org/project/github-contents/)
-[![Travis CI](https://travis-ci.com/simonw/github-contents.svg?branch=master)](https://travis-ci.com/simonw/github-contents)
+[![CircleCI](https://circleci.com/gh/simonw/github-contents.svg?style=svg)](https://circleci.com/gh/simonw/github-contents)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/datasette-json-html/blob/master/LICENSE)
 
 Read and write both small and large files to Github.
