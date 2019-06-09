@@ -12,6 +12,10 @@ Note that file contents is passed and returned as bytestrings, not regular strin
 
 ## Usage
 
+You will need a GitHub OAuth token with full repository access.
+
+The easiest way to create one of these is using [https://github.com/settings/tokens](https://github.com/settings/tokens)
+
 ```python
 # For repo simonw/disaster-data:
 github = GithubContents(
