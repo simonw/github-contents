@@ -24,16 +24,16 @@
                     ]
                 },
                 "method": "GET",
-                "uri": "https://api.github.com/repos/simonw/markdown-to-sqlite/contents/setup.cfg"
+                "uri": "https://api.github.com/repos/simonw/github-contents-demo/contents/hello.txt"
             },
             "response": {
                 "body": {
                     "encoding": "utf-8",
-                    "base64_string": "H4sIAAAAAAAAA7WSQWvCQBCF/8ue1dUk1SQQehCkp0J7sZSCbDaTZHGzm+5skCr+906KpVb0oKXHHXa+N+/N7JgRDbCUIfiuHcmyYgPWCl+flLAWVMlnEM3iJA6kLBORT5JpKGcRTMZxVJRS5lOIAnkXh8RAtSVsEAxY5zS11t63mHIuWjWqlK+7fCRtwx20FjmqxpoNb4RbF3Zjht4O8V0rD1xa48F4+vI9372DMmsEenAkU/tGr34rHNEvc3Ntc9LrKT9o4lHzCe7KgQnAezjyK8LqTWsrihNpJzaHrDoEd4jiK7bLxs548h9tv+FSaSCHBwwVlsECxXKxfX15LObmWcvwKZEPekzv8bzKsjdD38FIWyhT9dsXCNOIaiutzBpZuqOr0eX/LZeyvB1+0yL6czqS/MMp7fefEdhvlFsDAAA="
+                    "base64_string": "H4sIAAAAAAAAA7WSQW/CMAyF/0vOQIB20CChHTnvMjRpEnIbp42WJlUdxBjiv88dbGNoQmJoxzw537OfvRMeahQzUaFzYRBfo+iJBmJ1JlEFrKBJMlSYwiSdpCYzxVQP9dSYbAigVKbukrEaJSphBtk3xo6mPbFuXQeLsaGZlNDYQWljtc4HRahli00gSbYOfiMPer8IPqKP1NdYB/n5kl8d3rdo5jVQxJaNqli71U+PE/4lcu5CLg+cbzgT+fsZ8OqmGSE7PMkrItNh410AfWbewuaY2JqwPcbxEd6l4X6ZK26bbtPGOuQpjyAWYPFI+SIr9Vht88VD+bTUFSzT+bPnMvRF0NaXXJcD4SRlbeWsfyEx2wlCZ/5zuZzjLfg/raE7qBPTm45pv38HFCXXTGEDAAA="
                 },
                 "headers": {
                     "Date": [
-                        "Sun, 09 Jun 2019 19:48:22 GMT"
+                        "Sun, 09 Jun 2019 20:17:23 GMT"
                     ],
                     "Content-Type": [
                         "application/json; charset=utf-8"
@@ -51,10 +51,10 @@
                         "5000"
                     ],
                     "X-RateLimit-Remaining": [
-                        "4960"
+                        "4956"
                     ],
                     "X-RateLimit-Reset": [
-                        "1560113301"
+                        "1560115043"
                     ],
                     "Cache-Control": [
                         "private, max-age=60, s-maxage=60"
@@ -64,10 +64,10 @@
                         "Accept-Encoding"
                     ],
                     "ETag": [
-                        "W/\"b7e478982ccf9ab1963c74e1084dfccb6e42c583\""
+                        "W/\"ef38e9e4a6464f8fc7d0d7ff80aa998953291393\""
                     ],
                     "Last-Modified": [
-                        "Sun, 27 Jan 2019 02:37:25 GMT"
+                        "Sun, 09 Jun 2019 20:05:31 GMT"
                     ],
                     "X-OAuth-Scopes": [
                         "repo"
@@ -106,16 +106,16 @@
                         "gzip"
                     ],
                     "X-GitHub-Request-Id": [
-                        "EBC1:8570:2A2464D:333ECCF:5CFD6285"
+                        "EE3D:46C5:3A6C0FB:463FA4B:5CFD6953"
                     ]
                 },
                 "status": {
                     "code": 200,
                     "message": "OK"
                 },
-                "url": "https://api.github.com/repos/simonw/markdown-to-sqlite/contents/setup.cfg"
+                "url": "https://api.github.com/repos/simonw/github-contents-demo/contents/hello.txt"
             },
-            "recorded_at": "2019-06-09T19:48:22"
+            "recorded_at": "2019-06-09T20:17:23"
         }
     ],
     "recorded_with": "betamax/0.8.1"

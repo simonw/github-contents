@@ -51,11 +51,11 @@ class GithubContents:
         data = self.session.get(tree_entry["url"], headers=self.headers()).json()
         return base64.b64decode(data["content"]), data["sha"]
 
-    def write(self, filepath, content, sha=None, commit_message=None, committer=None):
+    def write(self, filepath, content, sha=None, commit_message="", committer=None):
         github_url = "{}/contents/{}".format(self.base_url(), filepath)
         payload = {
             "path": filepath,
-            "content": content.encode("base64"),
+            "content": base64.b64encode(content).decode("latin1"),
             "message": commit_message,
         }
         if sha:
@@ -87,7 +87,9 @@ class GithubContents:
             updated = response.json()
             return updated["content"]["sha"], updated["commit"]["sha"]
         else:
-            raise self.UnknownError(str(response.status_code) + ":" + response.content)
+            raise self.UnknownError(
+                str(response.status_code) + ":" + repr(response.content)
+            )
 
     def write_large(self, filepath, content, commit_message=None, committer=None):
         # Create a new blob with the file contents
