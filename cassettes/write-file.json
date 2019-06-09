@@ -39,7 +39,7 @@
                 },
                 "headers": {
                     "Date": [
-                        "Sun, 09 Jun 2019 20:19:00 GMT"
+                        "Sun, 09 Jun 2019 20:51:09 GMT"
                     ],
                     "Content-Type": [
                         "application/json; charset=utf-8"
@@ -57,10 +57,10 @@
                         "5000"
                     ],
                     "X-RateLimit-Remaining": [
-                        "4955"
+                        "4973"
                     ],
                     "X-RateLimit-Reset": [
-                        "1560115140"
+                        "1560116525"
                     ],
                     "X-OAuth-Scopes": [
                         "repo"
@@ -96,7 +96,7 @@
                         "default-src 'none'"
                     ],
                     "X-GitHub-Request-Id": [
-                        "EE4E:856F:14F856B:1989221:5CFD69B3"
+                        "F02F:68B7:33B70B5:3EB498E:5CFD713D"
                     ]
                 },
                 "status": {
@@ -105,7 +105,7 @@
                 },
                 "url": "https://api.github.com/repos/simonw/github-contents-demo/contents/hello.txt"
             },
-            "recorded_at": "2019-06-09T20:19:00"
+            "recorded_at": "2019-06-09T20:51:09"
         },
         {
             "request": {
@@ -136,11 +136,11 @@
             "response": {
                 "body": {
                     "encoding": "utf-8",
-                    "base64_string": "H4sIAAAAAAAAA7WSQW/CMAyF/0vOQIB20CChHTnvMjRpEnIbp42WJlUdxBjiv88dbGNoQmJoxzw537OfvRMeahQzUaFzYRBfo+iJBmJ1JlEFrKBJMlSYwiSdpCYzxVQP9dSYbAigVKbukrEaJSphBtk3xo6mPbFuXQeLsaGZlNDYQWljtc4HRahli00gSbYOfiMPer8IPqKP1NdYB/n5kl8d3rdo5jVQxJaNqli71U+PE/4lcu5CLg+cbzgT+fsZ8OqmGSE7PMkrItNh410AfWbewuaY2JqwPcbxEd6l4X6ZK26bbtPGOuQpjyAWYPFI+SIr9Vht88VD+bTUFSzT+bPnMvRF0NaXXJcD4SRlbeWsfyEx2wlCZ/5zuZzjLfg/raE7qBPTm45pv38HFCXXTGEDAAA="
+                    "base64_string": "H4sIAAAAAAAAA7WSQW/CMAyF/0vO0GylQEGqduS0wy47TUJO6rbR0qSqU3UM8d/nDrYxNCEB2jFPzvfsZ2+FgxrFUlRorY/CWxAj0UCoTiSqgJWJTpM7NY/jSToFhbM5xLqAHPQMUgRQaRIvIJlqZpB5Z+z9ZCS61g6wEBpaSgmNiUoTqk5F2teyxcaTJFN718u9PtbeBXSBxjnWXn695HeHDy0WWQ0UsGWjKtR2/dvjiH+OrKxXcs/5gTORv58AL26aEXLAk7wgstz3znrIT8xb6A+JdYTtIY7P8M4N98dcYdMMmy6MRZ7yAGIBVs+kVmmZx4uNWj2Vj32WvTguQad9blzJNQoIZwlra2vcK4nlVhDa4j8Xyxnegr9qBcMxHZnedEi73QcNJ4MRXQMAAA=="
                 },
                 "headers": {
                     "Date": [
-                        "Sun, 09 Jun 2019 20:19:00 GMT"
+                        "Sun, 09 Jun 2019 20:51:09 GMT"
                     ],
                     "Content-Type": [
                         "application/json; charset=utf-8"
@@ -158,10 +158,10 @@
                         "5000"
                     ],
                     "X-RateLimit-Remaining": [
-                        "4954"
+                        "4972"
                     ],
                     "X-RateLimit-Reset": [
-                        "1560115140"
+                        "1560116525"
                     ],
                     "Cache-Control": [
                         "private, max-age=60, s-maxage=60"
@@ -171,10 +171,10 @@
                         "Accept-Encoding"
                     ],
                     "ETag": [
-                        "W/\"ef38e9e4a6464f8fc7d0d7ff80aa998953291393\""
+                        "W/\"3c840b722385abe67a2cfadac6a8eaab8429a45c\""
                     ],
                     "Last-Modified": [
-                        "Sun, 09 Jun 2019 20:05:31 GMT"
+                        "Sun, 09 Jun 2019 20:49:00 GMT"
                     ],
                     "X-OAuth-Scopes": [
                         "repo"
@@ -213,7 +213,7 @@
                         "gzip"
                     ],
                     "X-GitHub-Request-Id": [
-                        "EE4E:856F:14F8575:1989230:5CFD69B4"
+                        "F02F:68B7:33B70CB:3EB49A7:5CFD713D"
                     ]
                 },
                 "status": {
@@ -222,13 +222,13 @@
                 },
                 "url": "https://api.github.com/repos/simonw/github-contents-demo/contents/hello.txt"
             },
-            "recorded_at": "2019-06-09T20:19:00"
+            "recorded_at": "2019-06-09T20:51:09"
         },
         {
             "request": {
                 "body": {
                     "encoding": "utf-8",
-                    "string": "{\"path\": \"hello.txt\", \"content\": \"aGVsbG8gd29ybGQgMw==\", \"message\": \"updated by test\", \"sha\": \"ef38e9e4a6464f8fc7d0d7ff80aa998953291393\", \"committer\": {\"name\": \"Test\", \"email\": \"test\"}}"
+                    "string": "{\"path\": \"hello.txt\", \"content\": \"aGVsbG8gd29ybGQgMw==\", \"message\": \"updated by test\", \"sha\": \"3c840b722385abe67a2cfadac6a8eaab8429a45c\", \"committer\": {\"name\": \"Test\", \"email\": \"test\"}}"
                 },
                 "headers": {
                     "User-Agent": [
@@ -259,11 +259,11 @@
             "response": {
                 "body": {
                     "encoding": "utf-8",
-                    "base64_string": "H4sIAAAAAAAAA7VVa2vbMBT9K8Wfk1h+yJYDZRRSygbJCASKM0a5ejh2Kj+w5DVNyX+fNCdtF0Zpmu7jlfE5Oueee/XksLrSotLO+MmpoBTO2MmFlPVIb7QzcBrQ+dGRysGcBIyEiMa+HxAMVEQx+CwDDiwCIgAoCf0EQswMhiq2BtYLBk7XSgumdaPGrgtNMVoVOu/oiNWl24qmVq4qyrp6cPvz4f5yashFWbuHyn2+4ZdWZJclKC1aQ5TrUt79zfEK/y1kKmvq9jgv4AbR/H4EePKlDYRr4ZV7gmW8fqhkDfyIvIWHvWOdEu3ejj/mvSXuH7r0Y2M7nRVSGJV3sqjulU2AEjL7nx0yZpwD/yEvbSpekZ6ViN1uYAamLK0M41Y/CR5HmDOMqQk/oXHAaIJJGHke5yELPZowiCKEjNFVzcVdwc1tppM0mvuJprcSTRf3m+lkjmfba/R9Pd0sJ1fe8mbqzW6/5ek2DdM126b+VzxbrNBsfb1Z3sxRup1v0rVcp4vUn06uLg34mcNlve2lmaS+X9LHZ64nO4ULOp3X7atNtRDKLilRQmFbrPuSg7bh9pGXDFE0RMnCR2MvGSO0dJ77ZzfGy8r7EJBuheE5xCDEPg4QChFnIokwkJCBb5ei4JSRAAvwgESEfE6nLLdy381pZJdCKVhZY7rGOsQv6OPF3rEGWvMEmA3w46AGRUng+RgwJ5AZPUxEYYQwJMbUOCA8ieM4QHHwOWoOuTuB9ezcvZtr93Pg/BJtkRUMdFFXtuV9LcwkZyCVGDitAGU/OV2lilVlvth3b1WB7lrjedVJaR/TR7vU+3K32/0GjYsgZ30HAAA="
+                    "base64_string": "H4sIAAAAAAAAA7VV2WrjMBT9leLnpJZ3KVDmJWVowSkdMpR0GMKVLMdy5QVLnnQh/16pTpcJQ2mazuO9QufonLvowWFNrXmtncmDU0PFnYlTcCmbY32rnZHTgi52UqoAkwkYDhFNfD/AEVAeJ+CzHDJgMWAOQHHoEwgjZjCUuDewXjBy+k5aMK1bNXFdaMXxSuiip8esqdyOt41ylaiaeu0O+fH2cWqc8apxnyP35YXfOp6fVKA07wxRoSu5/JvjDf57yFQ21B1wXsENorm+A7j3ow2Ea+GVu4dlWbOuZQPZDnkH661jveLd1o4n894T9w9d+q61lc6F5EblUor6RtkOUFzm/7NCxoxD4D/lpe2KN6QHdcRmMzIDU1VWhnHraRIo+BhTwhAEUYgIzeMoogxHNKIxRWFGE0qTJPSN0XWT8aXIzKV0uogvfaLplUTp/OY2nV5Gs/tTdFGdF2m5ChelLNPvp/ez+eX64uq8mpU/vUWVhrOrM29RXot0+uNmUWZiUbJgNj07MeAHDpf1dpCm3D0kfX7mBrJ9uKDXRdO92VRzruyS4hUIW2I9hBlo29w+8sgYxWNE5j6aRN4EkWvnpX52Y7yuvE8B6Y4bnpc2wMBIHCbMS1AU45jgLCeUBFECEWBGY4DQR76dty+olOU2dfoop5FdcaVgZY3pW+tQdkTvjraOtdCZL8BsgF/Palicx5RyyBENCPWpl2Cc+ZTgICEhzjjJSRAH7IvUPPfdHqwH992HuTa/R84f3olcMNCiqW3Jh5ibSc5BKj5yOg7KHjl9rcSqNif231vVoPvOeF73UtrP9M4u9SHcbDaPmEhkfH0HAAA="
                 },
                 "headers": {
                     "Date": [
-                        "Sun, 09 Jun 2019 20:19:01 GMT"
+                        "Sun, 09 Jun 2019 20:51:10 GMT"
                     ],
                     "Content-Type": [
                         "application/json; charset=utf-8"
@@ -281,10 +281,10 @@
                         "5000"
                     ],
                     "X-RateLimit-Remaining": [
-                        "4953"
+                        "4971"
                     ],
                     "X-RateLimit-Reset": [
-                        "1560115141"
+                        "1560116525"
                     ],
                     "Cache-Control": [
                         "private, max-age=60, s-maxage=60"
@@ -294,7 +294,7 @@
                         "Accept-Encoding"
                     ],
                     "ETag": [
-                        "W/\"77d57309475242e02d2350600b3bf67c\""
+                        "W/\"646025b4add62e6e223752f86c30c0d8\""
                     ],
                     "X-OAuth-Scopes": [
                         "repo"
@@ -333,7 +333,7 @@
                         "gzip"
                     ],
                     "X-GitHub-Request-Id": [
-                        "EE4E:856F:14F8580:198923C:5CFD69B4"
+                        "F02F:68B7:33B70D9:3EB49BB:5CFD713D"
                     ]
                 },
                 "status": {
@@ -342,7 +342,7 @@
                 },
                 "url": "https://api.github.com/repos/simonw/github-contents-demo/contents/hello.txt"
             },
-            "recorded_at": "2019-06-09T20:19:01"
+            "recorded_at": "2019-06-09T20:51:10"
         }
     ],
     "recorded_with": "betamax/0.8.1"

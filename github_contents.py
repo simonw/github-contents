@@ -22,7 +22,7 @@ class GithubContents:
         return {"Authorization": "token {}".format(self.token)}
 
     def read(self, filepath):
-        "Returns (file_contents, sha1)"
+        "Returns (file_contents_in_bytes, sha1)"
         # Try reading using content API
         content_url = "{}/contents/{}".format(self.base_url(), filepath)
         response = self.session.get(content_url, headers=self.headers())
@@ -51,11 +51,15 @@ class GithubContents:
         data = self.session.get(tree_entry["url"], headers=self.headers()).json()
         return base64.b64decode(data["content"]), data["sha"]
 
-    def write(self, filepath, content, sha=None, commit_message="", committer=None):
+    def write(
+        self, filepath, content_bytes, sha=None, commit_message="", committer=None
+    ):
+        if not isinstance(content_bytes, bytes):
+            raise TypeError("content_bytes must be a bytestring")
         github_url = "{}/contents/{}".format(self.base_url(), filepath)
         payload = {
             "path": filepath,
-            "content": base64.b64encode(content).decode("latin1"),
+            "content": base64.b64encode(content_bytes).decode("latin1"),
             "message": commit_message,
         }
         if sha:
@@ -68,17 +72,17 @@ class GithubContents:
             response.status_code == 403
             and response.json()["errors"][0]["code"] == "too_large"
         ):
-            return self.write_large(filepath, content, commit_message, committer)
+            return self.write_large(filepath, content_bytes, commit_message, committer)
         elif (
             sha is None
             and response.status_code == 422
             and "sha" in response.json().get("message", "")
         ):
             # Missing sha - we need to figure out the sha and try again
-            old_content, old_sha = self.read(filepath)
+            _, old_sha = self.read(filepath)
             return self.write(
                 filepath,
-                content,
+                content_bytes,
                 sha=old_sha,
                 commit_message=commit_message,
                 committer=committer,
@@ -91,11 +95,16 @@ class GithubContents:
                 str(response.status_code) + ":" + repr(response.content)
             )
 
-    def write_large(self, filepath, content, commit_message=None, committer=None):
+    def write_large(self, filepath, content_bytes, commit_message="", committer=None):
+        if not isinstance(content_bytes, bytes):
+            raise TypeError("content_bytes must be a bytestring")
         # Create a new blob with the file contents
         created_blob = self.session.post(
             self.base_url() + "/git/blobs",
-            json={"encoding": "utf8", "content": content},
+            json={
+                "encoding": "base64",
+                "content": base64.b64encode(content_bytes).decode("latin1"),
+            },
             headers=self.headers(),
         ).json()
         # Retrieve master tree sha

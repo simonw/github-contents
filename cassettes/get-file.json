@@ -29,11 +29,11 @@
             "response": {
                 "body": {
                     "encoding": "utf-8",
-                    "base64_string": "H4sIAAAAAAAAA7WSQW/CMAyF/0vOQIB20CChHTnvMjRpEnIbp42WJlUdxBjiv88dbGNoQmJoxzw537OfvRMeahQzUaFzYRBfo+iJBmJ1JlEFrKBJMlSYwiSdpCYzxVQP9dSYbAigVKbukrEaJSphBtk3xo6mPbFuXQeLsaGZlNDYQWljtc4HRahli00gSbYOfiMPer8IPqKP1NdYB/n5kl8d3rdo5jVQxJaNqli71U+PE/4lcu5CLg+cbzgT+fsZ8OqmGSE7PMkrItNh410AfWbewuaY2JqwPcbxEd6l4X6ZK26bbtPGOuQpjyAWYPFI+SIr9Vht88VD+bTUFSzT+bPnMvRF0NaXXJcD4SRlbeWsfyEx2wlCZ/5zuZzjLfg/raE7qBPTm45pv38HFCXXTGEDAAA="
+                    "base64_string": "H4sIAAAAAAAAA7WSQW/CMAyF/0vO0GylQEGqduS0wy47TUJO6rbR0qSqU3UM8d/nDrYxNCEB2jFPzvfsZ2+FgxrFUlRorY/CWxAj0UCoTiSqgJWJTpM7NY/jSToFhbM5xLqAHPQMUgRQaRIvIJlqZpB5Z+z9ZCS61g6wEBpaSgmNiUoTqk5F2teyxcaTJFN718u9PtbeBXSBxjnWXn695HeHDy0WWQ0UsGWjKtR2/dvjiH+OrKxXcs/5gTORv58AL26aEXLAk7wgstz3znrIT8xb6A+JdYTtIY7P8M4N98dcYdMMmy6MRZ7yAGIBVs+kVmmZx4uNWj2Vj32WvTguQad9blzJNQoIZwlra2vcK4nlVhDa4j8Xyxnegr9qBcMxHZnedEi73QcNJ4MRXQMAAA=="
                 },
                 "headers": {
                     "Date": [
-                        "Sun, 09 Jun 2019 20:17:23 GMT"
+                        "Sun, 09 Jun 2019 20:51:08 GMT"
                     ],
                     "Content-Type": [
                         "application/json; charset=utf-8"
@@ -51,10 +51,10 @@
                         "5000"
                     ],
                     "X-RateLimit-Remaining": [
-                        "4956"
+                        "4974"
                     ],
                     "X-RateLimit-Reset": [
-                        "1560115043"
+                        "1560116525"
                     ],
                     "Cache-Control": [
                         "private, max-age=60, s-maxage=60"
@@ -64,10 +64,10 @@
                         "Accept-Encoding"
                     ],
                     "ETag": [
-                        "W/\"ef38e9e4a6464f8fc7d0d7ff80aa998953291393\""
+                        "W/\"3c840b722385abe67a2cfadac6a8eaab8429a45c\""
                     ],
                     "Last-Modified": [
-                        "Sun, 09 Jun 2019 20:05:31 GMT"
+                        "Sun, 09 Jun 2019 20:49:00 GMT"
                     ],
                     "X-OAuth-Scopes": [
                         "repo"
@@ -106,7 +106,7 @@
                         "gzip"
                     ],
                     "X-GitHub-Request-Id": [
-                        "EE3D:46C5:3A6C0FB:463FA4B:5CFD6953"
+                        "F02E:3E09:39C56BB:45C7207:5CFD713C"
                     ]
                 },
                 "status": {
@@ -115,7 +115,7 @@
                 },
                 "url": "https://api.github.com/repos/simonw/github-contents-demo/contents/hello.txt"
             },
-            "recorded_at": "2019-06-09T20:17:23"
+            "recorded_at": "2019-06-09T20:51:08"
         }
     ],
     "recorded_with": "betamax/0.8.1"

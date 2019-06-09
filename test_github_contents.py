@@ -16,8 +16,8 @@ def test_read_small_file():
     with Betamax(github.session) as vcr:
         vcr.use_cassette("get-file")
         content, sha = github.read("hello.txt")
-    assert b"hello world again" == content
-    assert "ef38e9e4a6464f8fc7d0d7ff80aa998953291393" == sha
+    assert b"hello world 3" == content
+    assert "3c840b722385abe67a2cfadac6a8eaab8429a45c" == sha
 
 
 def test_write_small_file():
@@ -26,11 +26,26 @@ def test_write_small_file():
         vcr.use_cassette("write-file")
         assert (
             "3c840b722385abe67a2cfadac6a8eaab8429a45c",
-            "31d05dc55bac68b73cb9584611dd4c41b9ca6600",
+            "ba288b9c0a35409bf655bc85b5b6b04db7bb7742",
         ) == github.write(
             "hello.txt",
             b"hello world 3",
             commit_message="updated by test",
+            committer={"name": "Test", "email": "test"},
+        )
+
+
+def test_write_large():
+    github = GithubContents("simonw", "github-contents-demo", TOKEN)
+    with Betamax(github.session) as vcr:
+        vcr.use_cassette("write-file-large")
+        assert (
+            "659974e29c1fd07322c9adf7de6636c6c0c8f9d8",
+            "16b273de7090b618be4924e05b5763a9f4c4c69b",
+        ) == github.write_large(
+            "write_large.txt",
+            b"not actually large but I did use the .write_large() method",
+            commit_message="written by test",
             committer={"name": "Test", "email": "test"},
         )
 
