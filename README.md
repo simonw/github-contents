@@ -6,7 +6,7 @@
 
 Read and write both small and large files to Github.
 
-The regular [GitHub Contents API](https://developer.github.com/v3/repos/contents/) can't handle files larger than 1MB - this class knows how to spot that proble and switch to the large-file-supporting low level [Git Data API](https://developer.github.com/v3/git/) instead.
+The regular [GitHub Contents API](https://developer.github.com/v3/repos/contents/) can't handle files larger than 1MB - this class knows how to spot that problem and switch to the large-file-supporting low level [Git Data API](https://developer.github.com/v3/git/) instead.
 
 Note that file contents is passed and returned as bytestrings, not regular strings.
 
