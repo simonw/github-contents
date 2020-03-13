@@ -10,6 +10,10 @@ The regular [GitHub Contents API](https://developer.github.com/v3/repos/contents
 
 Note that file contents is passed and returned as bytestrings, not regular strings.
 
+## Installation
+
+    pip install github-contents
+
 ## Usage
 
 You will need a GitHub OAuth token with full repository access.
@@ -17,6 +21,8 @@ You will need a GitHub OAuth token with full repository access.
 The easiest way to create one of these is using [https://github.com/settings/tokens](https://github.com/settings/tokens)
 
 ```python
+from github_contents import GitubContents
+
 # For repo simonw/disaster-data:
 github = GithubContents(
     "simonw",
