@@ -1,0 +1,245 @@
+{
+    "http_interactions": [
+        {
+            "request": {
+                "body": {
+                    "encoding": "utf-8",
+                    "string": ""
+                },
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Authorization": [
+                        "token XXX"
+                    ]
+                },
+                "method": "GET",
+                "uri": "https://api.github.com/repos/simonw/github-contents-demo/git/refs/heads/demo-branch"
+            },
+            "response": {
+                "body": {
+                    "encoding": "utf-8",
+                    "base64_string": "H4sIAAAAAAAAA62OMW/CMBCF/4tngg04bckMC1JAoLaoU2X7LtiA7Sg+BBTx33HEXKlDlxuevnfvu7EOG1b1N3GLChIH9LHQnQrGsgELEfDbQUbqWf3y4T99/X641LN1ufyZi5XfHPX2jb7Cwmq/jLlw6o4ZtkRtqjhXrRvuHNmTHproeYdtTDw5H8OZP/PCxEAYKBX9cB9m6heZqPdoiFU3lqzKK0LCSLxOtWrKUjayNApRyNFYjtUEpAQwUyNBi6xF1xZzI0t4R/+j+fyV+J8t7vcHx2KUJ28BAAA="
+                },
+                "headers": {
+                    "Date": [
+                        "Fri, 13 Mar 2020 21:44:17 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Server": [
+                        "GitHub.com"
+                    ],
+                    "Status": [
+                        "200 OK"
+                    ],
+                    "X-RateLimit-Limit": [
+                        "5000"
+                    ],
+                    "X-RateLimit-Remaining": [
+                        "4164"
+                    ],
+                    "X-RateLimit-Reset": [
+                        "1584137530"
+                    ],
+                    "Cache-Control": [
+                        "private, max-age=60, s-maxage=60"
+                    ],
+                    "Vary": [
+                        "Accept, Authorization, Cookie, X-GitHub-OTP",
+                        "Accept-Encoding, Accept, X-Requested-With"
+                    ],
+                    "ETag": [
+                        "W/\"bc57761084a5cd95ce1e8e6f783b4080\""
+                    ],
+                    "Last-Modified": [
+                        "Sun, 09 Jun 2019 20:51:13 GMT"
+                    ],
+                    "X-Poll-Interval": [
+                        "300"
+                    ],
+                    "X-OAuth-Scopes": [
+                        "repo"
+                    ],
+                    "X-Accepted-OAuth-Scopes": [
+                        "repo"
+                    ],
+                    "X-GitHub-Media-Type": [
+                        "github.v3; format=json"
+                    ],
+                    "Access-Control-Expose-Headers": [
+                        "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=31536000; includeSubdomains; preload"
+                    ],
+                    "X-Frame-Options": [
+                        "deny"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "Referrer-Policy": [
+                        "origin-when-cross-origin, strict-origin-when-cross-origin"
+                    ],
+                    "Content-Security-Policy": [
+                        "default-src 'none'"
+                    ],
+                    "Content-Encoding": [
+                        "gzip"
+                    ],
+                    "X-GitHub-Request-Id": [
+                        "CDD4:0DCD:BA4952:D8AA7A:5E6BFEB1"
+                    ]
+                },
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "url": "https://api.github.com/repos/simonw/github-contents-demo/git/refs/heads/demo-branch"
+            },
+            "recorded_at": "2020-03-13T21:44:17"
+        },
+        {
+            "request": {
+                "body": {
+                    "encoding": "utf-8",
+                    "string": ""
+                },
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Authorization": [
+                        "token XXX"
+                    ]
+                },
+                "method": "GET",
+                "uri": "https://api.github.com/repos/simonw/github-contents-demo/git/refs/heads/demo-branch"
+            },
+            "response": {
+                "body": {
+                    "encoding": "utf-8",
+                    "base64_string": "H4sIAAAAAAAAA62OMW/CMBCF/4tngg04bckMC1JAoLaoU2X7LtiA7Sg+BBTx33HEXKlDlxuevnfvu7EOG1b1N3GLChIH9LHQnQrGsgELEfDbQUbqWf3y4T99/X641LN1ufyZi5XfHPX2jb7Cwmq/jLlw6o4ZtkRtqjhXrRvuHNmTHproeYdtTDw5H8OZP/PCxEAYKBX9cB9m6heZqPdoiFU3lqzKK0LCSLxOtWrKUjayNApRyNFYjtUEpAQwUyNBi6xF1xZzI0t4R/+j+fyV+J8t7vcHx2KUJ28BAAA="
+                },
+                "headers": {
+                    "Date": [
+                        "Fri, 13 Mar 2020 21:44:27 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Server": [
+                        "GitHub.com"
+                    ],
+                    "Status": [
+                        "200 OK"
+                    ],
+                    "X-RateLimit-Limit": [
+                        "5000"
+                    ],
+                    "X-RateLimit-Remaining": [
+                        "4163"
+                    ],
+                    "X-RateLimit-Reset": [
+                        "1584137530"
+                    ],
+                    "Cache-Control": [
+                        "private, max-age=60, s-maxage=60"
+                    ],
+                    "Vary": [
+                        "Accept, Authorization, Cookie, X-GitHub-OTP",
+                        "Accept-Encoding, Accept, X-Requested-With"
+                    ],
+                    "ETag": [
+                        "W/\"bc57761084a5cd95ce1e8e6f783b4080\""
+                    ],
+                    "Last-Modified": [
+                        "Sun, 09 Jun 2019 20:51:13 GMT"
+                    ],
+                    "X-Poll-Interval": [
+                        "300"
+                    ],
+                    "X-OAuth-Scopes": [
+                        "repo"
+                    ],
+                    "X-Accepted-OAuth-Scopes": [
+                        "repo"
+                    ],
+                    "X-GitHub-Media-Type": [
+                        "github.v3; format=json"
+                    ],
+                    "Access-Control-Expose-Headers": [
+                        "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=31536000; includeSubdomains; preload"
+                    ],
+                    "X-Frame-Options": [
+                        "deny"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "Referrer-Policy": [
+                        "origin-when-cross-origin, strict-origin-when-cross-origin"
+                    ],
+                    "Content-Security-Policy": [
+                        "default-src 'none'"
+                    ],
+                    "Content-Encoding": [
+                        "gzip"
+                    ],
+                    "X-GitHub-Request-Id": [
+                        "CDE0:44AB:984EA1:B3D2D5:5E6BFEBB"
+                    ]
+                },
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "url": "https://api.github.com/repos/simonw/github-contents-demo/git/refs/heads/demo-branch"
+            },
+            "recorded_at": "2020-03-13T21:44:27"
+        }
+    ],
+    "recorded_with": "betamax/0.8.1"
+}

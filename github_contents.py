@@ -9,10 +9,11 @@ class GithubContents:
     class UnknownError(Exception):
         pass
 
-    def __init__(self, owner, repo, token):
+    def __init__(self, owner, repo, token, branch=None):
         self.owner = owner
         self.repo = repo
         self.token = token
+        self.branch = branch
         self.session = Session()
 
     def base_url(self):
@@ -145,3 +146,13 @@ class GithubContents:
             headers=self.headers(),
         ).json()
         return created_blob["sha"], created_commit["sha"]
+
+    def branch_exists(self):
+        assert self.branch
+        return (
+            self.session.get(
+                self.base_url() + "/git/refs/heads/{}".format(self.branch),
+                headers=self.headers(),
+            ).status_code
+            == 200
+        )

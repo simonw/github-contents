@@ -1,0 +1,115 @@
+{
+    "http_interactions": [
+        {
+            "request": {
+                "body": {
+                    "encoding": "utf-8",
+                    "string": ""
+                },
+                "headers": {
+                    "User-Agent": [
+                        "python-requests/2.23.0"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "*/*"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ],
+                    "Authorization": [
+                        "token XXX"
+                    ]
+                },
+                "method": "GET",
+                "uri": "https://api.github.com/repos/simonw/github-contents-demo/git/refs/heads/not-a-branch"
+            },
+            "response": {
+                "body": {
+                    "encoding": "utf-8",
+                    "base64_string": "H4sIAAAAAAAAAw3JMQ6AIBAF0auYtVW3sPMAll7BIHzRRFgDi43x7tLNy7wUkLPxoIkW0WaWEh115MSWgKhGT4lrSVf9h+qdJ2aHB5fcSIM/9SjbYCXwM3IVJ+yZWw/tTV8bCdGCvh8u9SX+ZwAAAA=="
+                },
+                "headers": {
+                    "Date": [
+                        "Fri, 13 Mar 2020 21:42:17 GMT"
+                    ],
+                    "Content-Type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "Transfer-Encoding": [
+                        "chunked"
+                    ],
+                    "Server": [
+                        "GitHub.com"
+                    ],
+                    "Status": [
+                        "404 Not Found"
+                    ],
+                    "X-RateLimit-Limit": [
+                        "5000"
+                    ],
+                    "X-RateLimit-Remaining": [
+                        "4185"
+                    ],
+                    "X-RateLimit-Reset": [
+                        "1584137530"
+                    ],
+                    "X-Poll-Interval": [
+                        "300"
+                    ],
+                    "X-OAuth-Scopes": [
+                        "repo"
+                    ],
+                    "X-Accepted-OAuth-Scopes": [
+                        "repo"
+                    ],
+                    "X-GitHub-Media-Type": [
+                        "github.v3; format=json"
+                    ],
+                    "Access-Control-Expose-Headers": [
+                        "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset"
+                    ],
+                    "Access-Control-Allow-Origin": [
+                        "*"
+                    ],
+                    "Strict-Transport-Security": [
+                        "max-age=31536000; includeSubdomains; preload"
+                    ],
+                    "X-Frame-Options": [
+                        "deny"
+                    ],
+                    "X-Content-Type-Options": [
+                        "nosniff"
+                    ],
+                    "X-XSS-Protection": [
+                        "1; mode=block"
+                    ],
+                    "Referrer-Policy": [
+                        "origin-when-cross-origin, strict-origin-when-cross-origin"
+                    ],
+                    "Content-Security-Policy": [
+                        "default-src 'none'"
+                    ],
+                    "Vary": [
+                        "Accept-Encoding, Accept, X-Requested-With"
+                    ],
+                    "Content-Encoding": [
+                        "gzip"
+                    ],
+                    "X-GitHub-Request-Id": [
+                        "CD77:44AC:940E44:AF16A1:5E6BFE38"
+                    ]
+                },
+                "status": {
+                    "code": 404,
+                    "message": "Not Found"
+                },
+                "url": "https://api.github.com/repos/simonw/github-contents-demo/git/refs/heads/not-a-branch"
+            },
+            "recorded_at": "2020-03-13T21:42:17"
+        }
+    ],
+    "recorded_with": "betamax/0.8.1"
+}

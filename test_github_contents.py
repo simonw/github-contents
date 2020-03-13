@@ -7,6 +7,11 @@ import json
 
 TOKEN = os.environ.get("TEST_GITHUB_TOKEN") or "XXX"
 
+# When recording new tests, run the test suite with
+# VCR_RECORD=new_episodes TEST_GITHUB_TOKEN=... pytest -k name_of_test
+# https://betamax.readthedocs.io/en/latest/record_modes.html
+VCR_RECORD = os.environ.get("VCR_RECORD") or "none"
+
 with Betamax.configure() as config:
     config.cassette_library_dir = "cassettes"
 
@@ -48,6 +53,24 @@ def test_write_large():
             commit_message="written by test",
             committer={"name": "Test", "email": "test"},
         )
+
+
+def test_branch_exists_returns_false_for_nonexistant_branch():
+    github = GithubContents(
+        "simonw", "github-contents-demo", TOKEN, branch="not-a-branch"
+    )
+    with Betamax(github.session) as vcr:
+        vcr.use_cassette("branch-exists-false.json", record=VCR_RECORD)
+        assert not github.branch_exists()
+
+
+def test_branch_exists_returns_true_for_existing_branch():
+    github = GithubContents(
+        "simonw", "github-contents-demo", TOKEN, branch="demo-branch"
+    )
+    with Betamax(github.session) as vcr:
+        vcr.use_cassette("branch-exists-true.json", record=VCR_RECORD)
+        assert github.branch_exists()
 
 
 def test_no_accidental_oauth_token_in_cassettes():
